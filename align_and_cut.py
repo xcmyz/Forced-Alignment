@@ -48,8 +48,8 @@ if __name__ == "__main__":
         # print(logger.read())
 
     for future in futures:
-        logger = future.result()
-        print(logger.read())
+        future.result()
+        # print(logger.read())
 
     # Cut Wav
     if not os.path.exists(hp.new_wav_path):

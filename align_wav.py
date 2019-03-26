@@ -16,8 +16,9 @@ def align_wavs(corpus_filename, dict_filename, output_filename):
         dict_filename + " " + hp.pretrain_model + " " + output_filename
     # print(command)
     logger = os.popen(command)
+    print(logger.read())
 
-    return logger
+    # return logger
 
 
 # if __name__ == "__main__":
